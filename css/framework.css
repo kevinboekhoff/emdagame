@@ -1,0 +1,46 @@
+/*Makes Videos Responsive*/
+.video {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+}
+
+.video iframe,
+.video object,
+.video embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/*Makes Images Responsive*/
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/*Responsive Image for Crappy Browsers*/
+@media \0screen {
+  img {
+      width: auto; /* for ie 8 */
+  }
+}
+
+h1{
+    font-size: 30pt;
+}
+
+h2{
+    font-size: 20pt;
+}
+
+h3{
+    font-size: 16pt;
+}
+
+p{
+    font-size: 14pt;
+}

@@ -1,0 +1,77 @@
+/*Primary CSS Style*/
+#start_con {
+    margin-top: 2%;
+    width: 40%;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#start_con h1 {
+    font-size: 24px;
+}
+
+.myButton {
+    background-color: #44c767;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: arial;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 100px;
+    text-decoration: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+.myButton:hover {
+    background-color: #5cbf2a;
+}
+.myButton:active {
+    position: relative;
+    top: 1px;
+}
+
+.settings {
+    background-color: #c1c3c1;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: arial;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 10px;
+    text-decoration: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+.settings:hover {
+    background-color: #9a9a9a;
+}
+.settings:active {
+    position: relative;
+    top: 1px;
+}
+
+/*Tablet (Landscape)*/
+@media (max-width: 1024px) {
+}
+
+/*Tablet (Portrait)*/
+@media (max-width: 800px) {
+}
+
+/*Smartphone (Portriat)*/
+@media (max-width: 480px) {
+}
+/*Smartphone (Landscape)*/
+@media (max-width: 320px) {
+
+}
+
