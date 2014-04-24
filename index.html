@@ -5,9 +5,8 @@
     <title>Team A Project 2.0 | index.html</title>
 
     <!--Meta tags for SEO-->
-    <meta name="description" content="">
-    <meta name="keywords" content="Beer, College, Game, University, Javascript">
-    <meta name="name" content="Team A">
+    <meta name="description" content="Jump, run, sneek, and fight your way through challenging levels as college students on their ultimate quest to       find beer for their party">
+    <meta name="keywords" content="beer, college, game, university">
     <meta charset="UTF-8">
 
     <!--Cascade Stylesheets-->
@@ -15,33 +14,50 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/framework.css">
 
-    <!--Web Font-->
-    <script src="http://use.edgefonts.net/delius:n4:all.js"></script>
+    <!-- Web Font -->
+    <script src="http://use.edgefonts.net/chivo:n9,i9,i4,n4:all.js"></script>
 
-    <!--Allows users to inverse screen color for better reading (Accessibility Feature) -->
-    <script>
-        var i=1;
-            function colorTheme(){
-                if(i%2==0){
-                    document.body.style.backgroundColor="white";
-                    document.body.style.color= 'black';
-                        }
-                else{
-                    document.body.style.backgroundColor="#313030";
-                    document.body.style.color= 'white';
-                }
-            i++;
-        }
-    </script>
+    <!-- Load Screen (So our users don't get board) -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script type="text/javascript">
+            $(window).load(function() {
+	        $(".loader").fadeOut("slow");
+                })
+        </script>
+
+    <!-- Hot Corner -->
+    <script type="text/javascript">
+    function toggle_div_fun(id) {
+
+       var divelement = document.getElementById(id);
+
+       if(divelement.style.display == 'none')
+          divelement.style.display = 'block';
+       else
+          divelement.style.display = 'none';
+    }
+</script>
 
 </head>
 
 <body>
-    <div id="start_con">
-        <h1 align="center">Beer Run</h1>
-        <a href="#" class="myButton">Start</a>
-        <a href="#" class="settings">Settings</a>
-        <button onclick="colorTheme()">Inverse Color</button>
-    </div>
+    <div class="loader"></div>
+
+    <!-- Hot Corner Triggers -->
+    <div class="hotcorner1" onmouseover="toggle_div_fun('menu');"></div>
+    <div class="hotcorner2" onmouseover="toggle_div_fun('tools');"></div>
+    <div class="hotcorner3" onmouseover="toggle_div_fun('specials');"></div>
+    <div class="hotcorner4" onmouseover="toggle_div_fun('social');"></div>
+
+    <!-- Game Menus -->
+    <div id="menu">Menu</div>
+    <div id="tools">Tools</div>
+    <div id="specials">Specials</div>
+    <div id="social">Social</div>
+
+        <h1>Beer Run</h1>
+        <p>Welcome to "Beer Run"! We are currently in development to bring you an awesome game... We just need a little time...</p>
+        <a href="#" class="start">Start</a>
+
 </body>
 </html>
