@@ -29,18 +29,9 @@ img {
   }
 }
 
-h1{
-    font-size: 30pt;
-}
-
-h2{
-    font-size: 20pt;
-}
-
-h3{
-    font-size: 16pt;
-}
-
-p{
-    font-size: 14pt;
-}
+/*************** Accessibility (Fonts) *******************/
+/*Font is set in 16px ratios*/
+h1 {font-size: 64px;}
+h2 {font-size: 48px;}
+h3 {font-size: 32px;}
+p  {font-size: 16px;}

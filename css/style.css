@@ -1,16 +1,9 @@
 /*Primary CSS*/
 @import 'reset.css';
 
-/*************** Accessibility (Fonts) *******************/
-
-h1 {font-size: 64px;}
-h2 {font-size: 48px;}
-h3 {font-size: 32px;}
-p {font-size: 16px;}
-
 body {
     font-family: chivo;
-    background: #fff;
+    background: #f2efef;
 }
 
 #menu {
@@ -20,8 +13,11 @@ body {
  left: 0;
  top: 0;
  z-index: 9997;
- background: #a5a5a5;
+ background: #fff;
  display:none;
+ -webkit-filter: blur(1px);
+  filter: blur(10px);
+ opacity:0.;
 }
 
 #tools {
@@ -61,25 +57,46 @@ body {
   z-index: 9996;
 }
 
-.start {
-    background-color: #44c767;
-    -moz-border-radius: 6px;
-    -webkit-border-radius: 6px;
-    border-radius: 6px;
-    display: inline-block;
-    cursor: pointer;
-    color: #ffffff;
-    font-family: arial;
-    font-size: 18px;
-    font-weight: bold;
-    padding: 10px 100px;
-    text-decoration: none;
+#content{
     margin-left: auto;
     margin-right: auto;
+    width: 50%;
+    height: 100%;
+    background-color: #fff;
+    border-radius: 6px;
+    margin-top: 100px;
 }
+
+#content h1{
+    text-align:center;
+}
+
+.start {
+    color: #fff;
+    padding: 20px 200px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #00ea3e;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.start a {
+    color: #fff;
+    padding: 20px 200px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #00ea3e;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
 .start:hover {
     background-color: #5cbf2a;
 }
+
 .start:active {
     position: relative;
     top: 1px;
@@ -102,9 +119,11 @@ body {
     margin-left: auto;
     margin-right: auto;
 }
+
 .settings:hover {
     background-color: #9a9a9a;
 }
+
 .settings:active {
     position: relative;
     top: 1px;

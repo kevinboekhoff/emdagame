@@ -2,7 +2,7 @@
 <html>
 <head>
 
-    <title>Team A Project 2.0 | index.html</title>
+    <title>Team A Project 2.0 | game.html</title>
 
     <!--Meta tags for SEO-->
     <meta name="description" content="Jump, run, sneek, and fight your way through challenging levels as college students on their ultimate quest to       find beer for their party">
@@ -28,11 +28,11 @@
     <!-- Hot Corner -->
     <script type="text/javascript">
     function toggle_div_fun(id) {
+
        var divelement = document.getElementById(id);
 
        if(divelement.style.display == 'none')
           divelement.style.display = 'block';
-
        else
           divelement.style.display = 'none';
     }
@@ -41,13 +41,22 @@
 </head>
 
 <body>
-    <div id="content">
-        <h1>Beer Run</h1>
-        <br>
-        <img src="images/intro.svg" />
-        <br>
-        <a href="game.html" class="start">Start</a>
-        <br>
+    <div class="loader"></div>
+
+    <!-- Hot Corner Triggers -->
+    <div class="hotcorner1" onmouseover="toggle_div_fun('menu');"></div>
+    <div class="hotcorner2" onmouseover="toggle_div_fun('tools');"></div>
+    <div class="hotcorner3" onmouseover="toggle_div_fun('specials');"></div>
+    <div class="hotcorner4" onmouseover="toggle_div_fun('social');"></div>
+
+    <!-- Game Menus -->
+    <div id="menu">
+        <div id="menu_con">
+            <img src="images/pause.svg" onerror="this.onerror=null; this.src='images/pause.png'">
+        </div>
     </div>
+    <div id="tools">Tools</div>
+    <div id="specials">Specials</div>
+    <div id="social">Social</div>
 </body>
 </html>
